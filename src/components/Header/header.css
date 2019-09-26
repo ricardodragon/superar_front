@@ -1,0 +1,12 @@
+
+.lock:hover {
+    background-color: white;
+    color: gray;  
+}
+
+.lock{
+    border-radius: 45%;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.2s;
+}
