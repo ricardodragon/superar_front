@@ -1,0 +1,12 @@
+.container{
+    
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .15s;
+    padding: 0 20px;
+    
+}
+.table-responsive {
+    display: table;
+}
