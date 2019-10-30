@@ -11,7 +11,7 @@ class ListagemCategorias extends Component {
 
     componentDidMount(){
         // PubSub.subscribe('pilar',function(topico, pilar){                        
-            fetch("/api/categorias/bypilar/"+this.state.pilar.id)
+            fetch("/api/categoria/bypilar/"+this.state.pilar.id)
             .then(res => res.json())
             .then(
                 (result) => {

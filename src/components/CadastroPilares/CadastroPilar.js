@@ -14,7 +14,7 @@ class CadastroPilar extends Component {
         evento.preventDefault();
         
         if(pilar.id)
-            fetch("http://localhost:5000/api/pilares/"+pilar.id, { method: 'PUT',body:JSON.stringify(pilar), headers:{'Content-Type': 'application/json'}})
+            fetch("http://localhost:5000/api/pilar/"+pilar.id, { method: 'PUT',body:JSON.stringify(pilar), headers:{'Content-Type': 'application/json'}})
             .then(res => res.json())
             .then((result) => {
                     this.setState({
@@ -30,7 +30,7 @@ class CadastroPilar extends Component {
                 }
             )
         else
-            fetch("http://localhost:5000/api/pilares", { method: 'POST',body:JSON.stringify(pilar), headers:{'Content-Type': 'application/json'}})
+            fetch("http://localhost:5000/api/pilar", { method: 'POST',body:JSON.stringify(pilar), headers:{'Content-Type': 'application/json'}})
             .then(res => res.json())
             .then((result) => {
                     this.setState({

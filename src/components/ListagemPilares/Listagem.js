@@ -11,7 +11,7 @@ class Listagem extends Component {
     }    
 
     componentDidMount(){
-        fetch("/api/pilares")
+        fetch("/api/pilar")
         .then(res => res.json())
         .then(
             (result) => {
@@ -30,7 +30,7 @@ class Listagem extends Component {
     }
     
     excluir(pilar){                                                                
-        fetch("/api/pilares/"+pilar.id, { method: 'DELETE', headers:{'Content-Type': 'application/json'}})        
+        fetch("/api/pilar/"+pilar.id, { method: 'DELETE', headers:{'Content-Type': 'application/json'}})        
     }
 
     editar(pilar){                                
